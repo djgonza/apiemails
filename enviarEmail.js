@@ -2,8 +2,8 @@ const nodemailer = require('nodemailer');
 const openpgpEncrypt = require('nodemailer-openpgp').openpgpEncrypt;
 
 const SMTP_HOST = 'smtp.kokull.com';
-const SMTP_USER = 'noresponder@kokull.com';
-const SMTP_PASS = '9Vs#79wr';
+const SMTP_USER = process.env.SMT_USER;
+const SMTP_PASS = process.env.SMT_PASS;
 
 (async () => {
 
